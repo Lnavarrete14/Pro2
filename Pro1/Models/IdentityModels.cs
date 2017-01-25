@@ -15,6 +15,7 @@ namespace Pro1.Models
     {
         public ClaimsIdentity GenerateUserIdentity(ApplicationUserManager manager)
         {
+            string f = string.Empty;
             // Tenga en cuenta que authenticationType debe coincidir con el valor definido en CookieAuthenticationOptions.AuthenticationType
             var userIdentity = manager.CreateIdentity(this, DefaultAuthenticationTypes.ApplicationCookie);
             // Agregar reclamaciones de usuario personalizadas aquí
